@@ -1,0 +1,173 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+	margin:0;
+	padding:0;
+	background-color: white;
+}
+
+
+/*Navigation bar */
+ul{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin:0;
+    padding:0;
+    text-align: center;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+}
+li{
+    border-right: 1px solid white;
+    float: left;
+}
+
+li:nth-child(2){
+    border-right: none;
+    float:none;
+    text-align:center;
+    display:inline-block;
+}
+
+li:last-child{
+    border-right: none;
+    border-left: 1px solid white;
+    float: right;
+}
+li a{
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none
+}
+li:nth-child(odd) a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Map */
+canvas{
+	position: static;
+	z-index: -1;
+	float:left;
+	margin-left:5%;
+	margin-top: 5%;
+}
+
+/* Info box */
+.info-box {
+    position: fixed;
+    right: 0;
+    width: 40%;
+    height: 93.65%;
+    top: 6.35%;
+    background-color:  #C3E78B;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+    /* Horizontal translation info-box on icon click */
+.info-box-translate {
+    transform: translateX(0);
+}
+
+.title{
+	font-size: 25px;
+	font-weight: 700;
+	margin: 5% 5% 0 5%;
+}
+
+.photo{
+    width: 90%;
+    height: 25%;
+    margin: 2% 4%;
+	-webkit-filter: drop-shadow(5px 5px 5px #222 );
+	filter: drop-shadow(5px 5px 5px #222);
+}
+.photo3{
+    position: relative;
+    width:120%;
+    height:200%;
+}
+.photo2{
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    margin: 5% 5%;
+
+}
+#long-photo{
+    height: 75%;
+    width:75%;
+}
+
+#video{
+    height: 200px;
+}
+
+.text{
+    size:20px;
+	width:70%;
+	margin: 2% 15%;
+	text-align: justify;
+}
+
+#mid-text{
+    width:90%;
+    margin: 1% 5%;
+    text-align: justify;
+
+}
+
+#long-text{
+    width:90%;
+    margin: 1% 5%;
+    font-size:16px;
+
+}
+
+    /* x mark */
+.close {
+    background: #C3E78B;
+    width: 5%;
+    height: 20px;
+    position: relative;
+}
+.close:after {
+    content: '';
+    height: 95%;
+    border-left: 1px solid black;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 47%;
+}
+
+.close:before {
+    content: '';
+    height: 95%;
+    border-left: 1px solid black;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 47%;
+}
+
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
